@@ -11,6 +11,7 @@ jobs:
    container: rootproject/root:${{ matrix.version }}
    continue-on-error: true
    strategy:
+     fail-fast: false
      matrix:
        version: [6.26.10-conda, latest]
    steps:
