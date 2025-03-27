@@ -3,7 +3,6 @@ on: push
 jobs:
 
   build_skim:
-   needs: greeting
    runs-on: ubuntu-latest
    container: rootproject/root:${{ matrix.version }}
    strategy:
