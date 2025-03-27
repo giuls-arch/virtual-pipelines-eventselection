@@ -43,5 +43,5 @@ jobs:
 
        - name: skim
          run: |
-  	   chmod +x ./skim
+           chmod +x ./skim
            ./skim
