@@ -41,7 +41,9 @@ jobs:
        - uses: actions/upload-artifact@v4
          with:
            name: skim_ggH
-           path: skim_ggH.root
+           path: |
+             skim_ggH.root
+             skim_ggH.log
 
   plot:
    needs: skim
@@ -77,7 +79,7 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: hist_ggH
+          name: histograms
 
       - name: test cutflow
         run: python tests/test_cutflow_ggH.py
