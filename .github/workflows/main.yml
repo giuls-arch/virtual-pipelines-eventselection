@@ -53,7 +53,7 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: skim_gHH
+          name: skim_ggH
       
       - name: plot
         run: python histograms.py skim_ggH.root ggH hist_ggH.root
